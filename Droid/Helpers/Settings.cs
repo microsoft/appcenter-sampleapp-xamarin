@@ -3,7 +3,7 @@
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 
-namespace sampleappxamarin.Droid.Helpers
+namespace sampleAppXamarin.Droid.Helpers
 {
   /// <summary>
   /// This is the Settings static class that can be used in your Core solution or in any

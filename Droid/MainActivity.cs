@@ -8,9 +8,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
-namespace sampleappxamarin.Droid
+namespace sampleAppXamarin.Droid
 {
-    [Activity(Label = "sampleappxamarin.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "sampleAppXamarin.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
