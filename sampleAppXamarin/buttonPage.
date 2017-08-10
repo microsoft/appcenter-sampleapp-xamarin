@@ -1,0 +1,20 @@
+﻿using System;
+
+using Xamarin.Forms;
+
+namespace sampleAppXamarin
+{
+    public class buttonPage : ContentPage
+    {
+        public buttonPage()
+        {
+            Content = new StackLayout
+            {
+                Children = {
+                    new Label { Text = "Hello ContentPage" }
+                }
+            };
+        }
+    }
+}
+
