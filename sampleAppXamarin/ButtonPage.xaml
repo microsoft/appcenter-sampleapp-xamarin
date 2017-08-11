@@ -4,29 +4,29 @@
     x:Class="sampleAppXamarin.ButtonPage"
     Title="Mobile Center Sample App for Xamarin">
     <ContentPage.Content>
-    <StackLayout Padding="10,0">
-      <Label Text="Press one of the buttons below"
-            FontSize="Large"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand" />
-        <Button x:Name="crashAlert"
+        <StackLayout Padding="10,0">
+            <Label Text="Press one of the buttons below"
+                FontSize="Large"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="crashAlert"
                 Text="Send a sample crash"
                 BackgroundColor="Transparent"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
-             Clicked="Crash_Clicked"/>
-        <Button x:Name="sampleAlert"
+                Clicked="Crash_Clicked" />
+            <Button x:Name="sampleAlert"
                 Text="Send a sample event"
                 BackgroundColor="Transparent"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
-            Clicked="Event_Clicked"/>
-        <Button x:Name="colorAlert"
+                Clicked="Event_Clicked" />
+            <Button x:Name="colorAlert"
                 Text="Send event with color property"
                 BackgroundColor="Transparent"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
-            Clicked="Color_Clicked"/>
-    </StackLayout>
+                Clicked="Color_Clicked" />
+        </StackLayout>
 	</ContentPage.Content>
 </ContentPage>
