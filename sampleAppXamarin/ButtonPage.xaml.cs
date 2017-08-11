@@ -24,7 +24,7 @@ namespace sampleAppXamarin
 
         public void Color_Clicked(object sender, EventArgs e)
         {
-            DisplayActionSheet("Send event with color property", "Cancel", null, "Purple", "Yellow", "Red", "Blue");
+            DisplayActionSheet("Send event with color property", null, null, "Yellow", "Blue", "Red");
         }
     }
 }
