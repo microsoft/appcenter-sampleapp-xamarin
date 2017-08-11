@@ -11,19 +11,21 @@
             HorizontalOptions="CenterAndExpand" />
         <Button x:Name="crashAlert"
                 Text="Send a sample crash"
-             BackgroundColor="Transparent"
-             VerticalOptions="CenterAndExpand"
-             HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
              Clicked="Crash_Clicked"/>
         <Button x:Name="sampleAlert"
                 Text="Send a sample event"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
             Clicked="Event_Clicked"/>
         <Button x:Name="colorAlert"
                 Text="Send event with color property"
-            VerticalOptions="CenterAndExpand"
-            HorizontalOptions="CenterAndExpand"
+                BackgroundColor="Transparent"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
             Clicked="Color_Clicked"/>
     </StackLayout>
 	</ContentPage.Content>
