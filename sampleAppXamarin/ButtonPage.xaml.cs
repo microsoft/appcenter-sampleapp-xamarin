@@ -11,5 +11,20 @@ namespace sampleAppXamarin
         {
             InitializeComponent();
         }
+
+        public void Crash_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert(null, "Sample crash sent.", "OK");
+        }
+
+        public void Event_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert(null, "Event sent.", "OK");
+        }
+
+        public void Color_Clicked(object sender, EventArgs e)
+        {
+            DisplayActionSheet("Send event with color property", null, null, "Yellow", "Blue", "Red");
+        }
     }
 }
