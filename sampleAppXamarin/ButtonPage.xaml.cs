@@ -39,15 +39,15 @@ namespace sampleAppXamarin
             }
             else if (color.Equals("Blue"))
             {
-				Analytics.TrackEvent("Color event", new Dictionary<string, string> {
-					{ "Color", "Blue" }
-				});
+                Analytics.TrackEvent("Color event", new Dictionary<string, string> {
+                    { "Color", "Blue" }
+                });
             }
             else if (color.Equals("Red"))
             {
-				Analytics.TrackEvent("Color event", new Dictionary<string, string> {
-					{ "Color", "Red" }
-				});
+                Analytics.TrackEvent("Color event", new Dictionary<string, string> {
+                    { "Color", "Red" }
+                });
             }
         }
     }
