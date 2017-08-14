@@ -4,28 +4,33 @@
     x:Class="sampleAppXamarin.ButtonPage"
     Title="Mobile Center Sample App for Xamarin">
     <ContentPage.Content>
-        <StackLayout Padding="10,0">
-            <Label Text="Press one of the buttons below"
-                FontSize="Large"
+        <StackLayout Padding="0,0">
+            <Label Text="Mobile Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product.&#x0a;&#x0a;&#x0a;Swipe right to learn about our services"
+                FontSize="17"
+                WidthRequest="300"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand" />
-            <Button x:Name="crashAlert"
+            <Button x:Name="crashButton"
                 Text="Send a sample crash"
+                WidthRequest="300"
+                HeightRequest="55"
                 BackgroundColor="Transparent"
-                VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
                 Clicked="Crash_Clicked" />
-            <Button x:Name="sampleAlert"
+            <Button x:Name="sampleEventButton"
                 Text="Send a sample event"
+                WidthRequest="300"
+                HeightRequest="55"
                 BackgroundColor="Transparent"
-                VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
                 Clicked="Event_Clicked" />
-            <Button x:Name="colorAlert"
+            <Button x:Name="colorEventButton"
                 Text="Send event with color property"
+                WidthRequest="300"
+                HeightRequest="55"
                 BackgroundColor="Transparent"
-                VerticalOptions="CenterAndExpand"
                 HorizontalOptions="CenterAndExpand"
+                Margin="0,0,0,39"
                 Clicked="Color_Clicked" />
         </StackLayout>
 	</ContentPage.Content>
