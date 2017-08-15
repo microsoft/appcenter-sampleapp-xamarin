@@ -7,14 +7,14 @@
         <StackLayout BackgroundColor="#252525">
             <StackLayout VerticalOptions="StartAndExpand">
                 <Image Source="mclogo.png" 
-                    Aspect="AspectFit"
-                    HorizontalOptions="Center" />
+                    Aspect="AspectFill"
+                    HorizontalOptions="FillAndExpand" />
                 <Label Text="Mobile Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product."
-                    FontSize="20"
+                    FontSize="18"
                     TextColor="White"
                     WidthRequest="300"
                     HorizontalOptions="CenterAndExpand"
-                    Margin="0,24,0,0" />
+                    Margin="29,24,29,0" />
             </StackLayout>
             <StackLayout VerticalOptions="End">
                 <Button x:Name="crashButton"
@@ -24,6 +24,7 @@
                     WidthRequest="300"
                     HeightRequest="55"
                     HorizontalOptions="CenterAndExpand"
+                    Margin="29,0,29,0"
                     Clicked="Crash_Clicked" />
                 <Button x:Name="sampleEventButton"
                     Text="Send a sample event"
@@ -32,6 +33,7 @@
                     WidthRequest="300"
                     HeightRequest="55"
                     HorizontalOptions="CenterAndExpand"
+                    Margin="29,0,29,0"
                     Clicked="Event_Clicked" />
                 <Button x:Name="colorEventButton"
                     Text="Send event with color property"
@@ -40,7 +42,7 @@
                     WidthRequest="300"
                     HeightRequest="55"
                     HorizontalOptions="CenterAndExpand"
-                    Margin="0,0,0,39"
+                    Margin="29,0,29,39"
                     Clicked="Color_Clicked" />
             </StackLayout>
         </StackLayout>

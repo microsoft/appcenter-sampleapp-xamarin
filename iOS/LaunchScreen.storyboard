@@ -16,7 +16,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="193" translatesAutoresizingMaskIntoConstraints="NO" image="splash.png" misplaced="YES">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                                <color key="backgroundColor" colorSpace="calibratedRGB" red="0.73725490196078436" green="0.086274509803921567" blue="0.31372549019607843" alpha="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" colorSpace="calibratedRGB" red="0.73725490196078436" green="0.086274509803921567" blue="0.31372549019607843" alpha="1"/>
+                        <constraints>
+                            <constraint id="1580" firstItem="193" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX"/>
+                            <constraint id="1581" firstItem="193" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY"/>
+                            <constraint id="1582" firstItem="193" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,10 +36,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="profile_generic.png" width="95" height="95"/>
-        <image name="slideout.png" width="14" height="15"/>
-        <image name="tab_about.png" width="32" height="30"/>
-        <image name="tab_feed.png" width="32" height="30"/>
-        <image name="xamarin_logo.png" width="220" height="51"/>
+        <image name="mclogo.png" width="375" height="138"/>
     </resources>
 </document>
