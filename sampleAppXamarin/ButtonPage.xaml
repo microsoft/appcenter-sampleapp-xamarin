@@ -10,7 +10,7 @@
                     Aspect="AspectFit"
                     HorizontalOptions="Center" />
                 <Label Text="Mobile Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product."
-                    FontSize="17"
+                    FontSize="20"
                     TextColor="White"
                     WidthRequest="300"
                     HorizontalOptions="CenterAndExpand"
