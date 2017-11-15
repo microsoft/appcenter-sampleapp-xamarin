@@ -2,14 +2,14 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="sampleAppXamarin.ButtonPage"
-    Title="Mobile Center Sample App for Xamarin">
+    Title="App Center Sample App for Xamarin">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#252525">
             <StackLayout VerticalOptions="StartAndExpand">
                 <Image Source="mclogo.png" 
                     Aspect="AspectFill"
                     HorizontalOptions="FillAndExpand" />
-                <Label Text="Mobile Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product."
+                <Label Text="Visual Studio App Center is mission control for apps. It brings together multiple services, commonly used for mobile developers, into a single, integrated product."
                     FontSize="18"
                     TextColor="White"
                     WidthRequest="300"

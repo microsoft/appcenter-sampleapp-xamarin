@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIdentifier</key>
-	<string>com.microsoft.azure.mobile.demoapp.swift</string>
+	<string>com.microsoft.appcenter.demoapp.swift</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -41,6 +41,6 @@
 	<key>UIStatusBarStyle</key>
 	<string>UIStatusBarStyleLightContent</string>
 	<key>CFBundleName</key>
-	<string>MC Sample</string>
+	<string>AC Sample</string>
 </dict>
 </plist>
