@@ -27,7 +27,7 @@ namespace UITest
                     .Android
                     // TODO: Update this path to point to your Android app and uncomment the
                     // code if the app is not included in the solution.
-                    //.ApkFile ("../../../Droid/bin/Debug/xamarinforms.apk")
+                    //.ApkFile ("../../../SampleAppXamarin.Android/bin/Debug/xamarinforms.apk")
                     .StartApp();
             }
 
@@ -35,7 +35,7 @@ namespace UITest
                 .iOS
                 // TODO: Update this path to point to your iOS app and uncomment the
                 // code if the app is not included in the solution.
-                //.AppBundle ("../../../iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
+                //.AppBundle ("../../../SampleAppXamarin.iOS/bin/iPhoneSimulator/Debug/XamarinForms.iOS.app")
                 .StartApp();
         }
     }

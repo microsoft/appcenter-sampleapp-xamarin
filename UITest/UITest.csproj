@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -38,21 +38,24 @@
     <Compile Include="AppInitializer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Droid\sampleAppXamarin.Droid.csproj">
-      <Project>{1E2C8AA1-C654-40BC-BF00-E2A0D9E4B865}</Project>
-      <Name>sampleAppXamarin.Droid</Name>
+    <ProjectReference Include="..\SampleAppXamarin.Android\SampleAppXamarin.Android.csproj">
+      <Project>{45a97c44-c826-40ca-bf37-a7f899dbdc07}</Project>
+      <Name>SampleAppXamarin.Android</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\iOS\sampleAppXamarin.iOS.csproj">
-      <Project>{B6D7D4BA-3E3A-446E-A536-C4DA0B0CD508}</Project>
-      <Name>sampleAppXamarin.iOS</Name>
+    <ProjectReference Include="..\SampleAppXamarin.iOS\SampleAppXamarin.iOS.csproj">
+      <Project>{ef2e5ac9-e7ca-470b-9a15-62d8a3d33267}</Project>
+      <Name>SampleAppXamarin.iOS</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
