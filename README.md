@@ -1,4 +1,4 @@
-# Visual Studio App Center Sample App for Xamarin
+# Visual Studio App Center Sample App for .NET
 The Xamarin application in this repository and its corresponding tutorials will help you quickly and easily onboard to Visual Studio App Center.
 
 ## About this repository
