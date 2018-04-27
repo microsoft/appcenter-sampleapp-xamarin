@@ -125,9 +125,6 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Appicon120.png">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Appicon120-1.png">
-      <Visible>false</Visible>
-    </ImageAsset>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Appicon180.png">
       <Visible>false</Visible>
     </ImageAsset>
