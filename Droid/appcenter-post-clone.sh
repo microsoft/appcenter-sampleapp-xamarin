@@ -7,11 +7,13 @@ ZIPFILEPATH=$APPCENTER_SOURCE_DIRECTORY/$ZIPFILENAME
 echo "Source folder="$APPCENTER_SOURCE_DIRECTORY
 echo "Destination file="$ZIPFILENAME
 echo "Destination file path="$ZIPFILEPATH
+echo "Current directory"$PWD
 echo "moving to parent directory"
 cd ..
+echo "Current directory"$PWD
 echo "Zipping started for *.cs files from all projects"
 zip -r $ZIPFILENAME "*.cs"
-echo "Zipped to " $ZIPFILEPATH
+echo "Zipped to " $ZIPFILENAME
 echo "Listing all files inside zip"
-unzip -l $ZIPFILEPATH | sed '1,3d;$d' | sed '$d'
+unzip -l $ZIPFILENAME | sed '1,3d;$d' | sed '$d'
 echo "appcenter-post-clone.sh done"
