@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "appcenter-post-clone.sh execution started"
-echo $APPCENTER_BRANCH_$APPCENTER_BUILD_ID.zip
+echo $APPCENTER_BRANCH"_"$APPCENTER_BUILD_ID.zip
 $ZIPFILENAME="$APPCENTER_BRANCH_$APPCENTER_BUILD_ID.zip"
 $ZIPFILEPATH=$APPCENTER_SOURCE_DIRECTORY/$ZIPFILENAME
 echo "Source file="$ZIPFILENAME
