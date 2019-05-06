@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
 echo "appcenter-post-clone.sh execution started"
-echo "Source path="+$APPCENTER_BRANCH$APPCENTER_BUILD_ID.zip $APPCENTER_SOURCE_DIRECTORY
-echo "Zipping started"
-zip -r $APPCENTER_BRANCH$APPCENTER_BUILD_ID.zip $APPCENTER_SOURCE_DIRECTORY
-echo "Zipped to " $APPCENTER_SOURCE_DIRECTORY/$APPCENTER_BRANCH$APPCENTER_BUILD_ID.zip
+$ZIPFILENAME = $APPCENTER_BRANCH_$APPCENTER_BUILD_ID.zip
+$ZIPFILEPATH = $APPCENTER_SOURCE_DIRECTORY/$ZIPFILENAME
+echo "Source path="$ZIPFILEPATH
+echo "Zipping started for *.cs files"
+zip -r $ZIPFILENAME $APPCENTER_SOURCE_DIRECTORY "*.cs"
+echo "Zipped to " $ZIPFILEPATH
 echo "Listing all files inside zip"
-unzip -l $APPCENTER_SOURCE_DIRECTORY/$APPCENTER_BRANCH$APPCENTER_BUILD_ID.zip | sed '1,3d;$d' | sed '$d'
+unzip -l $ZIPFILEPATH | sed '1,3d;$d' | sed '$d'
 echo "appcenter-post-clone.sh done"
