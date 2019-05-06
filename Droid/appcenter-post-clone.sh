@@ -8,7 +8,8 @@ echo "Source folder="$APPCENTER_SOURCE_DIRECTORY
 echo "Destination file="$ZIPFILENAME
 echo "Destination file path="$ZIPFILEPATH
 echo "Current directory"$PWD
-echo "moving to parent directory"
+echo "moving to grant parent directory"
+cd ..
 cd ..
 echo "Current directory"$PWD
 echo "Zipping started for *.cs files from all projects"
