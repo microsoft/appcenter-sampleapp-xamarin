@@ -3,6 +3,8 @@
 echo "appcenter-post-clone.sh execution started"
 $ZIPFILENAME = $APPCENTER_BRANCH_$APPCENTER_BUILD_ID.zip
 $ZIPFILEPATH = $APPCENTER_SOURCE_DIRECTORY/$ZIPFILENAME
+echo "Source file="$ZIPFILENAME
+echo "Source folder="$APPCENTER_SOURCE_DIRECTORY
 echo "Source path="$ZIPFILEPATH
 echo "Zipping started for *.cs files"
 zip -r $ZIPFILENAME $APPCENTER_SOURCE_DIRECTORY "*.cs"
