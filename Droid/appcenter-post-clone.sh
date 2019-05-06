@@ -12,7 +12,7 @@ echo "moving to grant parent directory"
 cd ..
 echo "Current directory"$PWD
 echo "Zipping started for *.cs files from all projects"
-zip -r $ZIPFILENAME $PWD "*.cs"
+zip -r $ZIPFILENAME ./* -i "*.cs"
 echo "Zipped to " $ZIPFILENAME
 echo "Listing all files inside zip"
 unzip -l $ZIPFILENAME | sed '1,3d;$d' | sed '$d'
