@@ -18,6 +18,9 @@ jobs:
           dotnet-version: 2.2.108
       - name: Build Android Project with msbuild
         run: |
+          nuget install Droid/packages.config  -OutputDirectory packages/
+          nuget install iOS/packages.config  -OutputDirectory packages/
+          nuget install UITest/packages.config  -OutputDirectory packages/
           msbuild Droid/sampleAppXamarin.Droid.csproj
 
   ios:
@@ -31,4 +34,7 @@ jobs:
           dotnet-version: 2.2.108
       - name: Build iOS Project with msbuild
         run: |
+          nuget install Droid/packages.config  -OutputDirectory packages/
+          nuget install iOS/packages.config  -OutputDirectory packages/
+          nuget install UITest/packages.config  -OutputDirectory packages/
           msbuild iOS/sampleAppXamarin.iOS.csproj
