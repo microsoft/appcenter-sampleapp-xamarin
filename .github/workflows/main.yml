@@ -1,4 +1,4 @@
-name: Build .NET Core Project
+name: Build Xamarin Project
 
 on:
   push:
@@ -7,15 +7,28 @@ on:
     branches: [master]
 
 jobs:
-  build:
-
+  android:
     runs-on: macos-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 2.2.108
-    - name: Build with dotnet
-      run: dotnet build --configuration Release
+      - name: Checkout Project
+        uses: actions/checkout@v1
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 2.2.108
+      - name: Build Android Project with msbuild
+        run: |
+          msbuild Droid/sampleAppXamarin.Droid.csproj
+
+  ios:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v1
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 2.2.108
+      - name: Build iOS Project with msbuild
+        run: |
+          msbuild iOS/sampleAppXamarin.iOS.csproj
