@@ -1,10 +1,14 @@
-# Xamarin.Android
-# Build a Xamarin.Android project.
+# Xamarin
+# Build a Xamarin project.
 # Add steps that test, sign, and distribute an app, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
 
 trigger:
-- master
+  branches:
+    include:
+      - master
+pr:
+  - master
 
 pool:
   vmImage: 'macos-latest'
@@ -30,10 +34,11 @@ steps:
     projectFile: '**/*Droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
-
 - task: XamariniOS@2
   inputs:
-    solutionFile: '**/*.sln'
+    solutionFile: '**/*iOS*.csproj'
     configuration: 'Release'
-    buildForSimulator: true
+    clean: true
     packageApp: false
+    buildForSimulator: true
+    runNugetRestore: false
