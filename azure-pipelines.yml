@@ -1,10 +1,14 @@
-# Xamarin.Android
-# Build a Xamarin.Android project.
+# Xamarin
+# Build a Xamarin project.
 # Add steps that test, sign, and distribute an app, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/xamarin
 
 trigger:
-- master
+  branches:
+    include:
+      - master
+pr:
+  - master
 
 pool:
   vmImage: 'macos-latest'
@@ -16,6 +20,12 @@ variables:
 steps:
 - task: NuGetToolInstaller@1
 
+# To manually select a Xamarin SDK version on the Hosted macOS agent, enable this script with the SDK version you want to target
+# https://go.microsoft.com/fwlink/?linkid=871629
+- script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_4
+  displayName: 'Select Xamarin SDK version'
+  enabled: false
+
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '**/*.sln'
@@ -24,10 +34,11 @@ steps:
     projectFile: '**/*Droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
-
 - task: XamariniOS@2
   inputs:
-    solutionFile: '**/*.sln'
+    solutionFile: '**/*iOS*.csproj'
     configuration: 'Release'
-    buildForSimulator: true
+    clean: true
     packageApp: false
+    buildForSimulator: true
+    runNugetRestore: false
