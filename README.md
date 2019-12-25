@@ -1,6 +1,6 @@
 # App Center Sample App for Xamarin
 
-The Android application in this repository will help you quickly and easily onboard to Visual Studio App Center.
+The Xamarin application in this repository will help you quickly and easily onboard to Visual Studio App Center.
 
 ## About this repository
 
