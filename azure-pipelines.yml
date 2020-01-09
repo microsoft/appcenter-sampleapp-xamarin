@@ -34,6 +34,10 @@ steps:
     projectFile: '**/*Droid*.csproj'
     outputDirectory: '$(outputDirectory)'
     configuration: '$(buildConfiguration)'
+    msbuildVersionOption: 'latest'
+    msbuildArchitectureOption: 'x86'
+    clean: true
+    jdkOption: 'JDKVersion'
 - task: XamariniOS@2
   inputs:
     solutionFile: '**/*iOS*.csproj'
@@ -41,4 +45,4 @@ steps:
     clean: true
     packageApp: false
     buildForSimulator: true
-    runNugetRestore: false
+    runNugetRestore: true
